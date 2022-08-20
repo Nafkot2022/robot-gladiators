@@ -122,3 +122,15 @@ if (playAgainConfirm) {
 else {
   window.alert("Thank you for playing Robot Gladiators! Come back soon!");
 }
+
+startGame();
+
+var shop = function() {
+  console.log("enter the shop");
+  fight(pickedEnemyName);
+
+// if we're not at the last enemy in the array
+if (i < enemyNames.length - 1) {
+  shop();
+}
+}
